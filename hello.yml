@@ -1,10 +1,16 @@
 version: 2.1
 
 jobs:
-  hello:
+  run:
     executor: default
+    description: Echo hello world
+    parameters:
+      message:
+        description: Message
+        type: string
+        default: Hello World
     steps:
-      - run: echo "Hello World"
+      - run: echo -e "${COLOR_GREEN}<< parameters.message >>${COLOR_RESET} \U0001F44B"
 
 executors:
   default:
