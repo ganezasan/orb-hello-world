@@ -1,0 +1,9 @@
+version: 2.1
+
+orbs:
+  hello: ganezasan/hello-world@dev:first
+
+workflows:
+  build:
+    jobs:
+      - hello/hello
