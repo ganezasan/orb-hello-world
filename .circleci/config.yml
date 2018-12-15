@@ -1,5 +1,3 @@
-# update config
-
 version: 2.1
 
 orbs:
@@ -8,4 +6,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - hello/hello
+      - hello/run
